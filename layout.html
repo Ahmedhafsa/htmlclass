@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>layout</title>
+  <style>
+    *{
+      box-sizing: border-box;
+
+
+    }
+    body{
+      font-family: "Century Schoolbook L";
+    }
+    /* the header style*/
+    header{
+      background-color:#666
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+    }
+    /* Create two columns/boxes that floats next to each other*/
+    nav{
+      float: left;
+      width: 30%;
+      height: 200px;/* only  for demonstration, should be removed*/
+      background: #ccc;
+      padding: 20px;
+    }
+    /*style list inside the menu*/
+    nav ul{
+      list-style-type: none;
+      padding: 0px;
+    }
+    article{
+      float: left;
+      padding: 20px;
+      width: 34%;
+      background-color: #f1f1f1;
+      height: 306px; /* only for demonstration,should be removed*/
+
+    }
+    /*Clear floats after column*/
+    section::after{
+      content:"";
+      display: table;
+      clear: both;
+    }
+    /*style the footer*/
+    footer{
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: maroon;
+    }
+    /*Responsive layout -makes the two columns/boxes stack on top of each other
+    instead of next to each other, on small screen*/
+     @media(max-width: 600px){nav,article{
+       width: 100%;
+       height: auto;
+     }}
+  </style>
+</head>
+<body>
+<h2>CSS layout float</h2>
+<P>In this example we have created head folder and many others like style </P>
+<p>resize the browser like njvdhggvhf hgrgfbgjdhgftyrh hgrheyrhjfhgyrgh grfghvfgrtrg
+gvfhgvbjegrygkweuirewi yrghfkruet5yjkefjhrgkewjgb hjjrtekiug</p>
+<header>
+  <h2>countries</h2>
+</header>
+<section>
+<nav>
+  <ul>
+    <l1><a href="#">turkey</a></l1>
+    <l1><a href="#">america</a></l1>
+    <l1><a href="#"></a>germany</l1>
+  </ul>
+</nav>
+  <article>
+    <h1>turkey</h1>
+    <p>turkey is a known country in the world with the most beautiful scenaries
+    turkey is the most visited country with many tourist and tourist centres
+    </p>
+    <p>turkey is also a beautiful country with many beautiful creatures in it</p>
+  </article>
+  </section>
+<footer>
+  <p>footer</p>
+</footer>
+
+
+
+
+
+</body>
+</html>
